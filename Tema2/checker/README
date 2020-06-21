@@ -1,0 +1,18 @@
+Ana-Maria Radu
+324CA
+
+P2 - Am folosit sortarea topologica pentru a eficientiza cautarea rutei optime.
+Am introdus in vectorul topsort nodurile in ordinea lor topologica si apoi,
+plecand din sursa, am cautat toti vecinii si am actualizat un vector de
+distante (similar algoritmului Dijkstra, dar fara a fi nevoie de o coada).
+Complexitatea este O(|E| + |V|) pentru sortarea topologica si apoi O(|E| * |V|)
+pentru calculul distantelor.
+(Bucati din cod, cum ar fi sortarea topologica, au fost preluate din taskul 2 al
+laboratorului 7).
+
+P3 - Am folosit Dijkstra, modificat astfel incat sortarea in priority queue a
+nodurilor sa se faca conform principiului de MaxHeap. Initial, vectorul de
+distante are d[sursa] = energie si restul distantelor 0. La fiecare pas al
+algoritmului, se actualizeaza distantele in functie de energia necesara pentru
+a ajunge la nodurile respective. (Algoritmul a fost preluat din taskul 1 al
+laboratorului 9).
